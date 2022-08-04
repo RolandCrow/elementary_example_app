@@ -20,6 +20,9 @@ class Location {
     required this.woeid,
 });
 
+  factory Location.fromJson(Map<String, dynamic> json) => _$LocationFromJson(json);
+
+
   
 }
 
