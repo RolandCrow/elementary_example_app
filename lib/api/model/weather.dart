@@ -62,6 +62,13 @@ class Weather {
   String toString() {
     return 'Weather{id: $id, weatherStateName: $weatherStateName, weatherStateAbbr: $weatherStateAbbr, windDirectionCompass: $windDirectionCompass, created: $created, applicableDate: $applicableDate, minTemp: $minTemp, maxTemp: $maxTemp, theTemp: $theTemp, windSpeed: $windSpeed, windDirection: $windDirection, airPressure: $airPressure, humidity: $humidity, visibility: $visibility, predictability: $predictability}';
   }
+
+
+}
+
+
+extension WeatherStateX on WeatherState {
+  String? get abbr => _$WeatherStateEnumMap[this];
 }
 
 
